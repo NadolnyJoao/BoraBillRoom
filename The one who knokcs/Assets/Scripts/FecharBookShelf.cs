@@ -7,7 +7,7 @@ public class FecharBookShelf : MonoBehaviour
     public bool Trigger;
     public GameObject BookShelf;
     public GameObject NewBookShelf;
-    public GameObject Axe;
+    //public GameObject Axe;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class FecharBookShelf : MonoBehaviour
         Trigger = true;
         BookShelf.SetActive(false);
         NewBookShelf.SetActive(true);
-        Axe.SetActive(true);
+        //Axe.SetActive(true);
 
     }
     /*void OnCollisionEnter(Collision collision)

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Machado : MonoBehaviour
 {
-    public GameObject Trigger;
+   
+    public PaintsChalange activate;
+    public GameObject Axe;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +16,16 @@ public class Machado : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Trigger.activeInHierarchy){
-            gameObject.SetActive(true);
-        }
+       ActivateAxe();
     }
+
+    public void ActivateAxe(){
+         if (activate.TudoCerto){
+            Axe.SetActive(true);
+        }
+
+
+    }
+
+
 }

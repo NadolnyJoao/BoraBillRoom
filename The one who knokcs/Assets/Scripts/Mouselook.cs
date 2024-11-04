@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Mouselook : MonoBehaviour
 {
-    public float cameraSensitivity = 75f;
+    public float cameraSensitivity = 50f;
     public Transform transformCamera;
     private Vector2 cameraDelta;
     private Vector2 touchPosition;
