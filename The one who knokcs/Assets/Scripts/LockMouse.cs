@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LockMouse : MonoBehaviour
 {
   public GameObject Livro;
+  public GameObject Demiurgo;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class LockMouse : MonoBehaviour
 		// Retrieve the name of this scene.
 		string sceneName = currentScene.name;
 
-		if (Livro.active) 
+		if (Livro.active || Demiurgo.active) 
 		{
 			Cursor.lockState = CursorLockMode.None;
 		}

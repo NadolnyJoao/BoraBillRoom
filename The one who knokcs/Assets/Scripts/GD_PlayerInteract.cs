@@ -89,7 +89,7 @@ public class GD_PlayerInteract : MonoBehaviour
     {
         
         currentInteractable?.Interact();
-        if(currentInteractable.GetInteractionText() == "prota de sair")Destroy(currentInteractable.gameObject,2);
+        //if(currentInteractable.GetInteractionText() == "porta de sair")Destroy(currentInteractable.gameObject,2);
         //não vou testar isso com a benção de exu vai funcionar quando o joao usar;
     }
 
