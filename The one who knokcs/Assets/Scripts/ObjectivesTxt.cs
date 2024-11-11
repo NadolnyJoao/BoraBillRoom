@@ -9,6 +9,8 @@ public class ObjectivesTxt : MonoBehaviour
     public GameObject Book;
     public GameObject Lighet;
     public GameObject esqueiroTxt;
+    private PaintsChalange pinturas;
+    public GameObject axe;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,16 @@ public class ObjectivesTxt : MonoBehaviour
         }
         else if(esqueiroTxt.active){
         ObjectivesTxts.text = "Tente Acender as velas";
+        }
+        else if(esqueiroTxt.active==false){
+            ObjectivesTxts.text = "Uma sala se abriu, e nela, tem pinturas estranhas, talvez interagir com elas seja bom";
+        }
+        if(pinturas.TudoCerto == true){
+            ObjectivesTxts.text = "A a porta se abriu de novo, e agora na mesa, tem um machado, melhor pegar ele";
+        }
+        else if (axe.activeInHierarchy){
+            ObjectivesTxts.text = "agora tem uma chance de escapar, talvez eu possa quebrar uma porta com esse machado";
+
         }
     }
 }
