@@ -18,9 +18,11 @@ public class AplicationQuit : MonoBehaviour
     }
 
     public void Sair(){
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-
+#else
         Application.Quit();
+#endif
           //EditorApplication.Exit(0);
     }
 }
