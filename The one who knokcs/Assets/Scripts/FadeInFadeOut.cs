@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadeInFadeOut : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class FadeInFadeOut : MonoBehaviour
                 OutFade = false;
             }
         }
+        
     }
 
     public void FadeIn()
@@ -46,5 +48,9 @@ public class FadeInFadeOut : MonoBehaviour
     {
         InFade = false;
         OutFade = true;
+    }
+    public void TerminarJogo(){
+
+         SceneManager.LoadScene("Menu");
     }
 }
