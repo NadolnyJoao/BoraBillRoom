@@ -42,7 +42,7 @@ public class PaintsChalange : MonoBehaviour
 
         if (gameObjects.Length == 3)
         {   
-           Debug.Log("funciono essa caralha");
+          // Debug.Log("funciono essa caralha");
            TudoCerto = true;
            }
     

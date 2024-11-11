@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5485334566528177250, guid: e38f71baf0077544c8da19959ce9cb97, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5647187525711643071, guid: e38f71baf0077544c8da19959ce9cb97, type: 3}
       propertyPath: m_Name
@@ -9167,6 +9167,7 @@ MonoBehaviour:
   PlayerCamera: {fileID: 1378993372}
   InteractionDistance: 3
   interactionText: {fileID: 1469391311}
+  machadoObj: {fileID: 1963624975}
 --- !u!65 &1320908277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12499,6 +12500,39 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!1 &1778702492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1451343612572638, guid: 4277c84f4eb45414089869ec9eed16a9, type: 3}
+  m_PrefabInstance: {fileID: 1244444749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778702497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778702492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbd8883ce02b57a48ad2b54d2e535808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: prota de saida
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1320908276}
+        m_TargetAssemblyTypeName: GD_PlayerInteract, Assembly-CSharp
+        m_MethodName: UsarMachado
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1831389310
 GameObject:
   m_ObjectHideFlags: 0
